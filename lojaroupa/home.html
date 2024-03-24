@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="form">
+    <form action="" onsubmit="return enviarFormulario()">
+        <p>Nome:</p> 
+        <input type="text" id="nome" name="nome" required class="option"><br>
+        <p>Email:</p> 
+        <input type="email" id="email" name="email" required class="option"> <br>
+        <p>Do que você gosta?</p> 
+        <input type="checkbox" id="opcao1" name="opcao" class="option">
+        <label for="opcao1" class="option-label">Vestido de Festa</label> <br>
+        <input type="checkbox" id="opcao2" name="opcao" class="option"> 
+        <label for="opcao2" class="option-label">Vestido Casual</label> <br>
+        <input type="checkbox" id="opcao3" name="opcao" class="option"> 
+        <label for="opcao3" class="option-label">Vestido Maxi</label> <br>
+        <input type="checkbox" id="opcao4" name="opcao" class="option"> 
+        <label for="opcao4" class="option-label">Vestido Cocktail</label> <br>
+        <input type="checkbox" id="opcao5" name="opcao" class="option"> 
+        <label for="opcao5" class="option-label">Vestido de Noiva</label> <br>
+        <input type="checkbox" id="opcao6" name="opcao" class="option"> 
+        <label for="opcao6" class="option-label">Todas as opções acima</label> <br>
+        <input type="checkbox" id="opcao7" name="opcao" class="option"> 
+        <label for="opcao7" class="option-label">Nenhuma das opções</label> <br>
+
+        <input type="submit" value="Enviar" class="enviar">
+    </form>
+</div>
+
+    <script>
+        function enviarFormulario() {
+
+            console.log("Formulário enviado com sucesso");
+
+            alert("Formulário enviado com sucesso!");
+
+            window.location.href= "index.html";
+
+        return false;
+        }
+    </script>
+
+</body>
+</html>
